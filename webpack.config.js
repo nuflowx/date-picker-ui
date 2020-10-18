@@ -28,6 +28,21 @@ export default {
           plugins: ['@babel/plugin-transform-runtime'],
         },
       },
+    }, {
+      test: /\.(sc|c|sa)ss$/,
+      use: [{
+        loader: 'style-loader',
+      }, {
+        loader: 'css-loader',
+        options: {
+          sourceMap: true,
+          importLoaders: 2,
+        },
+      },
+      // "scoped" needs to be _after_ `css-loader` and _before_ any `pre-processing loader`
+      { loader: 'scoped-css-loader' },
+      { loader: 'sass-loader' },
+  ],
     }],
   },
   resolve: {
