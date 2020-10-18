@@ -1,0 +1,46 @@
+@import './root.scss';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.35;
+  color: var(--color-black);
+  background-color: var(--color-brand-bg);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin-bottom: 1.15rem;
+  line-height: 1.45;
+  letter-spacing: -0.5px;
+}
+
+a {
+  color: var(--color-brand-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
