@@ -4,9 +4,7 @@ import dayjs from 'dayjs';
 import Dropdown from '../Dropdown';
 
 function DateSelect() { // change this to scrollable buttons instead of select-dropdown?
-  const options = [{
-    value: '',
-  }];
+  const options = [];
 
   let n = 0;
   while (n <= 28) {
