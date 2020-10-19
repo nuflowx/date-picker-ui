@@ -1,7 +1,7 @@
 import React from 'react';
-import './TimeSelect.scoped.scss';
+import './SelectTime.scoped.scss';
 
-function TimeCell(props) {
+function Cell(props) {
   const {
     value,
   } = props;
@@ -13,4 +13,4 @@ function TimeCell(props) {
   );
 }
 
-export default TimeCell;
+export default Cell;

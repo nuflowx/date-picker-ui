@@ -1,17 +1,18 @@
 import React from 'react';
 
-import TimeCell from './TimeCell';
+import Cell from './Cell';
+import './SelectTime.scoped.scss';
 
-function TimeSelect() {
+function SelectTime() {
   return (
-    <div>
-      <TimeCell value="20:45" />
-      <TimeCell value="21:00" />
-      <TimeCell value="21:15" />
-      <TimeCell value="21:30" />
-      <TimeCell value="21:45" />
+    <div className="select-time-container">
+      <Cell value="20:45" />
+      <Cell value="21:00" />
+      <Cell value="21:15" />
+      <Cell value="21:30" />
+      <Cell value="21:45" />
     </div>
   );
 }
 
-export default TimeSelect;
+export default SelectTime;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TimeRow(props) {
+function Row(props) {
   const {
     children,
   } = props;
@@ -12,4 +12,4 @@ function TimeRow(props) {
   );
 }
 
-export default TimeRow;
+export default Row;

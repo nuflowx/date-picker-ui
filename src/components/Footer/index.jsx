@@ -1,4 +1,5 @@
 import React from 'react';
+import './Footer.scoped.scss';
 
 function Footer() {
   return (
