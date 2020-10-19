@@ -7,9 +7,8 @@ function DateSelect() { // change this to scrollable buttons instead of select-d
   const options = [];
 
   let n = 0;
-  while (n <= 28) {
+  while (n < 28) { // 4 weeks
     const day = dayjs().add(n, 'day');
-    day.add(n, 'day');
     options.push({
       value: day.format('YYYY-MM-DD'),
       label: day.format('D ddd MMM'),

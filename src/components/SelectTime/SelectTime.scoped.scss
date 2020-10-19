@@ -1,7 +1,27 @@
-.select-time-container {
+.select-time__container {
   flex: 2;
+  overflow-y: auto;
+
+  // hide scrollbar from https://stackoverflow.com/a/13184693
+  scrollbar-width: none; // mozilla
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-.time-cell {
+.select-time__daytime-header {
+  text-transform: uppercase;
+}
+
+.select-time__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item-time {
+  padding: 5px 10px;
+  margin: 10px;
+  text-align: center;
   background: var(--color-white);
 }
