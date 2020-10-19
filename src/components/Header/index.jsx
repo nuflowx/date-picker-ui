@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.scoped.scss';
 
-function Header(props) {
+function Header() {
   return (
     <header>
       <h2>Booking Time</h2>

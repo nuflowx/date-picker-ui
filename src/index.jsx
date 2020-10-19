@@ -8,7 +8,7 @@ import Header from './components/Header';
 import SelectDate from './components/SelectDate';
 import SelectTime from './components/SelectTime';
 
-function Application(props) {
+function Application() {
   return (
     <div>
       <h1>Welcome to date-picker-UI.</h1>

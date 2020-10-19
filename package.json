@@ -2,7 +2,7 @@
   "name": "date-picker-ui",
   "description": "Select a time and date and store in state",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "index.jsx",
   "type": "module",
   "scripts": {
     "start": "node dev-server.js"
@@ -17,8 +17,14 @@
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^5.0.0",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.4",
     "sass": "^1.27.0",
     "sass-loader": "^10.0.3",
     "scoped-css-loader": "^1.0.0",

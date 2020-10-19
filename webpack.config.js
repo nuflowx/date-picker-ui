@@ -8,7 +8,7 @@ const targets = { browsers: ['> 1%', 'last 2 versions'] };
 export default {
   devtool: 'inline-source-map',
   mode: 'development',
-  entry: ['./src/index.js'],
+  entry: ['./src/index.jsx'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: './dist/bundle.js',

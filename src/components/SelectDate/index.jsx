@@ -1,6 +1,6 @@
 import React from 'react';
 
-function DateSelect(props) {
+function DateSelect() {
   return (
     <div>
       DateSelect

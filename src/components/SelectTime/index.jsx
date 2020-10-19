@@ -2,17 +2,7 @@ import React from 'react';
 
 import TimeCell from './TimeCell';
 
-const TimeRow = ({
-  children,
-}) => {
-  return (
-    <div className={block(null, { [columns]: columns })}>
-      {rows}
-    </div>
-  );
-};
-
-function TimeSelect(props) {
+function TimeSelect() {
   return (
     <div>
       <TimeCell value="20:45" />
