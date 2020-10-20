@@ -1,16 +1,16 @@
 import React from 'react';
 import './SelectTime.scoped.scss';
 
-function ItemTime(props) {
+function TimeSlot(props) {
   const {
     value,
   } = props;
 
   return (
-    <div className="item-time">
+    <div className="time-slot">
       {value}
     </div>
   );
 }
 
-export default ItemTime;
+export default TimeSlot;
