@@ -1,0 +1,11 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--color-white);
+  border-top: 2px solid var(--color-neutral-900);
+}
+
+.booking-time {
+  font-weight: 700;
+}

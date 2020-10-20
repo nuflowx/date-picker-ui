@@ -5,7 +5,7 @@ import {
 } from '../actions/types/new-booking-action-types';
 
 const initialState = {
-  timeSlot: null,
+  time: null,
   date: null,
 };
 
