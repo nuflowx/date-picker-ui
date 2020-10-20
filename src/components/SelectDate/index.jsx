@@ -1,9 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import dayjs from 'dayjs';
 
+import { SET_DATE } from '../../actions/types/new-booking-action-types';
 import Dropdown from '../Dropdown';
 
-function DateSelect() { // change this to scrollable buttons instead of select-dropdown?
+function DateSelect({ dispatch }) { // change this to scrollable buttons instead of select-dropdown?
   const options = [];
 
   let n = 0;
@@ -17,14 +19,19 @@ function DateSelect() { // change this to scrollable buttons instead of select-d
     n += 1;
   }
 
+  const onChange = (date) => {
+    dispatch({ type: SET_DATE, payload: { date } });
+  };
+
   return (
     <div>
       Select Date&nbsp;
       <Dropdown
+        onChange={onChange}
         options={options}
       />
     </div>
   );
 }
 
-export default DateSelect;
+export default connect()(DateSelect);

@@ -7,6 +7,7 @@ function Dropdown(props) {
   const {
     disabled,
     name,
+    onChange,
     options,
   } = props;
 
@@ -22,7 +23,7 @@ function Dropdown(props) {
       id={name}
       name={name}
       onBlur={() => setFocused(false)}
-      onChange={({ target }) => setValue(target.value)}
+      onChange={({ target }) => { setValue(target.value); onChange(target.value); }}
       onFocus={() => setFocused(true)}
       value={value}
     >

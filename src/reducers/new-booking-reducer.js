@@ -1,33 +1,35 @@
+import {
+  RESET_BOOKING,
+  SET_DATE,
+  SET_TIME,
+} from '../actions/types/new-booking-action-types';
+
 const initialState = {
   timeSlot: null,
   date: null,
 };
 
-function updateNewBookingDate(state, payload) {
+function updateNewBookingDate(state, { date }) {
   return {
     ...state,
-    newBookings: {
-      date: payload,
-    },
+    date,
   };
 }
 
-function updateNewBookingTime(state, payload) {
+function updateNewBookingTime(state, { time }) {
   return {
     ...state,
-    newBookings: {
-      date: payload,
-    },
+    time,
   };
 }
 
 export default (state = initialState, { type, payload = {} }) => {
   switch (type) {
-    case 'NewBookingAction.UPDATE_NEW_BOOKING_DATE':
+    case SET_DATE:
       return updateNewBookingDate(state, payload);
-    case 'NewBookingAction.UPDATE_NEW_BOOKING_TIME':
+    case SET_TIME:
       return updateNewBookingTime(state, payload);
-    case 'NewBookingAction.RESET_NEW_BOOKING':
+    case RESET_BOOKING:
       return initialState;
     default:
       return state;
