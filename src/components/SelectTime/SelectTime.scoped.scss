@@ -23,5 +23,10 @@
   padding: 5px 10px;
   margin: 10px;
   text-align: center;
-  background: var(--color-white);
+  background-color: var(--color-white);
+  border: none;
+}
+.time-slot--selected {
+  color: var(--color-white);
+  background-color: var(--color-black);
 }
