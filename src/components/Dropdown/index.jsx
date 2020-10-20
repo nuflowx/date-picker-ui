@@ -9,9 +9,8 @@ function Dropdown(props) {
     name,
     onChange,
     options,
+    defaultOption = {},
   } = props;
-
-  const defaultOption = options.find((option) => option.selected === true) || {};
 
   const [focused, setFocused] = React.useState(false);
   const [value, setValue] = React.useState(defaultOption.value);

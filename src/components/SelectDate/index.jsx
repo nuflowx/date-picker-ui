@@ -7,6 +7,11 @@ import getDayOptions from '../../utilities/dropdown-utility'; // TODO: add alias
 
 function DateSelect({ dispatch }) { // change this to scrollable buttons instead of select-dropdown?
   const options = getDayOptions(24);
+  const defaultOption = options.find((option) => option.selected === true);
+
+  React.useEffect(() => {
+    if (defaultOption) dispatch({ type: SET_DATE, payload: { date: defaultOption.value } });
+  }, []);
 
   const onChange = (date) => {
     dispatch({ type: SET_DATE, payload: { date } });
