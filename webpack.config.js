@@ -1,11 +1,10 @@
-import path from 'path';
-import BabelPresetEnv from '@babel/preset-env';
-import BabelPresetReact from '@babel/preset-react';
+const path = require('path');
+const BabelPresetEnv = require('@babel/preset-env');
+const BabelPresetReact = require('@babel/preset-react');
 
-const __dirname = path.resolve();
 const targets = { browsers: ['> 1%', 'last 2 versions'] };
 
-export default {
+module.exports = {
   devtool: 'inline-source-map',
   mode: 'development',
   entry: ['./src/index.jsx'],
