@@ -5,8 +5,11 @@ import customParseFormat from 'dayjs/plugin/customParseFormat';
 
 import './Footer.scoped.scss';
 
+// to parse string with known format
+// https://day.js.org/docs/en/parse/string-format
+dayjs.extend(customParseFormat);
+
 function Footer({ date, time }) {
-  dayjs.extend(customParseFormat);
   // convert to datetime, add minutes, format for display XD
   const bookingEnd = dayjs(time, 'H:mm').add(50, 'minute').format('H:mm');
   const displayDate = dayjs(date, 'YYYY-MM-DD').format('ddd, D MMM');

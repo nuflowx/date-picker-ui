@@ -22,6 +22,7 @@
 .time-slot {
   padding: 5px 10px;
   margin: 10px;
+  font-size: 14px;
   text-align: center;
   background-color: var(--color-white);
   border: none;
@@ -29,4 +30,8 @@
 .time-slot--selected {
   color: var(--color-white);
   background-color: var(--color-black);
+}
+.time-slot--disabled {
+  cursor: not-allowed;
+  opacity: .5;
 }
